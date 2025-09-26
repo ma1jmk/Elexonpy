@@ -89,6 +89,8 @@ class ReferenceApi(object):
         path_params = {}
 
         query_params = []
+        if 'format' in params:
+            query_params.append(('format', params['format']))  # noqa: E501
 
         header_params = {}
 
