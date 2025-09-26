@@ -68,7 +68,7 @@ class ReferenceApi(object):
                  returns the request thread.
         """
 
-        all_params = []  # noqa: E501
+        all_params = ['format']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
